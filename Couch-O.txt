@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Couch-O | Inicio</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+    }
+    /* Encabezado superior */
+    header {
+      background-color: #0058a3; /* Color corporativo similar a IKEA */
+      color: #fff;
+      text-align: center;
+    }
+    header .logo {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    /* Menú de navegación */
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin: 0 15px;
+      padding: 10px 0;
+    }
+    nav li a {
+      font-weight: bold;
+      color: #0058a3;
+    }
+    nav li a:hover {
+      color: #f90;
+    }
+    /* Barra de búsqueda en el menú */
+    .search-container {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+    .search-container input[type="text"] {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .search-container button {
+      padding: 6px 10px;
+      margin-left: 5px;
+      background-color: #0058a3;
+      border: none;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #f90;
+    }
+    /* Banner principal (hero) */
+    .hero {
+      background-image: url('banner-placeholder.jpg'); /* Reemplaza con la imagen de tu banner */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 3em;
+    }
+    /* Secciones principales */
+    .section {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1200px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #0058a3;
+      border-bottom: 2px solid #0058a3;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Ejemplo de grid para productos/ofertas */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background-color: #f9f9f9;
+      width: 280px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #0058a3;
+    }
+    .card-content p {
+      font-size: 0.9em;
+      color: #666;
+    }
+    /* Footer */
+    footer {
+      background-color: #0058a3;
+      color: #fff;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    footer ul li a {
+      color: #fff;
+    }
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+    @media(max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .search-container {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado con el logo y nombre de la empresa -->
+  <header>
+    <div class="logo">Couch-O</div>
+    <p>Diseño, confort y estilo en cada mueble</p>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#inspiracion">Inspiración</a></li>
+      <li><a href="#tiendas">Tiendas</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <!-- Barra de búsqueda -->
+      <li class="search-container">
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Banner principal (Hero) -->
+  <section class="hero" id="inicio">
+    <h2>Bienvenido a Couch-O</h2>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section class="section" id="productos">
+    <h2>Productos</h2>
+    <p>Aquí encontrarás nuestra gama de productos, diseñados para brindar confort y estilo a tu hogar.</p>
+    <div class="grid">
+      <!-- Tarjeta de producto ejemplo -->
+      <div class="card">
+        <img src="producto1.jpg" alt="Producto 1">
+        <div class="card-content">
+          <h3>Nombre del Producto 1</h3>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="producto2.jpg" alt="Producto 2">
+        <div class="card-content">
+          <h3>Nombre del Producto 2</h3>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+      <!-- Agrega más tarjetas según sea necesario -->
+    </div>
+  </section>
+
+  <!-- Sección de Ofertas -->
+  <section class="section" id="ofertas">
+    <h2>Ofertas</h2>
+    <p>Descubre nuestras promociones y descuentos especiales.</p>
+    <div class="grid">
+      <div class="card">
+        <img src="oferta1.jpg" alt="Oferta 1">
+        <div class="card-content">
+          <h3>Oferta Especial 1</h3>
+          <p>Detalles y condiciones de la oferta.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="oferta2.jpg" alt="Oferta 2">
+        <div class="card-content">
+          <h3>Oferta Especial 2</h3>
+          <p>Detalles y condiciones de la oferta.</p>
+        </div>
+      </div>
+      <!-- Más ofertas -->
+    </div>
+  </section>
+
+  <!-- Sección de Inspiración -->
+  <section class="section" id="inspiracion">
+    <h2>Inspiración</h2>
+    <p>Ideas y consejos para decorar y ambientar tu hogar.</p>
+    <div class="grid">
+      <div class="card">
+        <img src="inspiracion1.jpg" alt="Inspiración 1">
+        <div class="card-content">
+          <h3>Título Inspirador 1</h3>
+          <p>Breve descripción de la inspiración.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="inspiracion2.jpg" alt="Inspiración 2">
+        <div class="card-content">
+          <h3>Título Inspirador 2</h3>
+          <p>Breve descripción de la inspiración.</p>
+        </div>
+      </div>
+      <!-- Más contenidos inspiracionales -->
+    </div>
+  </section>
+
+  <!-- Sección de Tiendas / Localizador -->
+  <section class="section" id="tiendas">
+    <h2>Nuestras Tiendas</h2>
+    <p>Encuentra la tienda Couch-O más cercana a ti.</p>
+    <!-- Puedes insertar un mapa o un formulario de búsqueda de ubicación -->
+    <div>
+      <p>[Localizador de tiendas o mapa integrado]</p>
+    </div>
+  </section>
+
+  <!-- Sección Acerca de / Información de la empresa -->
+  <section class="section" id="acerca">
+    <h2>Acerca de Couch-O</h2>
+    <p>Conoce nuestra historia, misión y compromiso con la calidad y el diseño.</p>
+    <p>[Aquí puedes agregar información detallada sobre la empresa, su trayectoria y valores]</p>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta o comentario? Ponte en contacto con nosotros.</p>
+    <!-- Formulario de contacto simple -->
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+      <button type="submit" style="padding:10px 20px; background-color:#0058a3; color:#fff; border:none; border-radius:3px; cursor:pointer;">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Couch-O. Todos los derechos reservados.</p>
+    <ul>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#tiendas">Tiendas</a></li>
+      <!-- Agrega más enlaces según tus necesidades -->
+    </ul>
+  </footer>
+</body>
+</html>
+      
